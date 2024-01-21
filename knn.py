@@ -1,4 +1,3 @@
-import math
 import statistics
 import numpy as np
 
@@ -20,14 +19,14 @@ class KNN:
             preds.append(majority)
         return np.array(preds)
 
-    def euclidean(self, dp1, dp2):
-        return np.sqrt(np.sum((dp1 - dp2)**2))
+    def euclidean(self, x1, x2):
+        return np.sqrt(np.sum((x1 - x2)**2))
     
-    def manhattan(self, dp1, dp2):
-        return np.sum(np.abs(dp1-dp2))
+    def manhattan(self, x1, x2):
+        return np.sum(np.abs(x1-x2))
     
-    def minkowski(self, dp1, dp2, p=2):
-        return np.sum(np.abs(dp1-dp2)**p)**(1/p)
+    def minkowski(self, x1, x2, p=2):
+        return np.sum(np.abs(x1-x2)**p)**(1/p)
     
     def get_neighbours(self, test_row):
         distances = []
