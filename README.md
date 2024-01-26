@@ -1,5 +1,3 @@
-# Binary image classification using k nearest neighbours algorithms from scratch
+# Binary Image Classification using K Nearest Neighbours Algorithms
 
-training set: 70
-validation set: 20
-testing set: 10
+
